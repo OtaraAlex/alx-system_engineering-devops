@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -t | head
+find . -type d ! -path . -print | wc -l
