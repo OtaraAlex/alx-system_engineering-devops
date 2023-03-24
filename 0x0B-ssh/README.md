@@ -16,3 +16,6 @@ ALX-provided server.
 * **2. Client configuration file**
   * [2-ssh_config](./2-ssh_config): SSH configuration file configured to use the private key
 `~/.ssh/school` and to refuse authentication using a password.
+
+* **3. Client configuration file (w/ Puppet)**
+  * [100-puppet_ssh_config.pp](./100-puppet_ssh_config.pp): Using Puppet to make changes to our SSH configuration file that is configured to use the private key `~/.ssh/school` and to refuse to authenticate using a password.
