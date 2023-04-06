@@ -10,25 +10,22 @@ reset='\033[0m'
 echo -e "${blue}Updating and doing some minor checks...${reset}\n"
 
 function install() {
-	command -v "$1" &> /dev/null
-
-	#shellcheck disable=SC2181
-	if [ $? -ne 0 ]; then
-		echo -e "	Installing: ${brown}$1${reset}\n"
-		sudo apt-get update -y -qq && \
-			sudo apt-get install -y "$1" -qq
-		echo -e "\n"
-	else
-		echo -e "	${green}${1} is already installed.${reset}\n"
-	fi
+    if ! command -v "$1" &> /dev/null; then
+        echo -e "    Installing: ${brown}$1${reset}\n"
+        sudo apt-get update -y -qq && \
+            sudo apt-get install -y "$1" -qq
+        echo -e "\n"
+    else
+        echo -e "    ${green}${1} is already installed.${reset}\n"
+    fi
 }
 
-install haproxy #install haproxy
+install haproxy
 
 echo -e "\n${blue}Setting up some minor stuff.${reset}\n"
 
 # backup default server config file
-sudo cp /etc/haproxy/haproxy.cfg haproxy_default.backup
+sudo cp /etc/haproxy/haproxy.cfg /etc/haproxy/haproxy.cfg.bak
 
 server_config=\
 "
@@ -49,14 +46,13 @@ backend alexotara-tech-backend
     server 119047-web-02 100.25.223.50 check
 "
 
-# shellcheck disable=SC2154
-echo "$server_config" | sudo dd status=none of=/etc/haproxy/haproxy.cfg
+echo "$server_config" | sudo tee /etc/haproxy/haproxy.cfg > /dev/null
 
 # enable haproxy to be started by init script
-echo "ENABLED=1" | sudo dd status=none of=/etc/default/haproxy
+sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
 
-if [ "$(pgrep -c haproxy)" -le 0 ]; then
-	sudo service haproxy start
+if ! sudo systemctl is-active --quiet haproxy; then
+    sudo systemctl start haproxy
 else
-	sudo service haproxy restart
+    sudo systemctl restart haproxy
 fi
