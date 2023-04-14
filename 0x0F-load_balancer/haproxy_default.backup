@@ -1,0 +1,26 @@
+global
+    log /dev/log local0
+    log /dev/log local1 notice
+    chroot /var/lib/haproxy
+    user haproxy
+    group haproxy
+    daemon
+
+defaults
+    log global
+    mode http
+    option httplog
+    option dontlognull
+    retries 3
+    timeout connect 5000
+    timeout client 50000
+    timeout server 50000
+
+frontend http-in
+    bind *:80
+    default_backend alexotara.tech
+
+backend alexotara.tech
+    balance roundrobin
+    server 119047-web-01 54.174.89.177-web-01:80 check
+    server 119047-web-02 100.25.223.50-web-02:80 check
