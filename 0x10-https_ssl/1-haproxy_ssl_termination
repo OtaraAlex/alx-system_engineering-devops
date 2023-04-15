@@ -48,6 +48,6 @@ frontend alexotara.tech-https-frontend
 
 backend alexotara.tech-backend
         balance roundrobin
-        server 119047-web-01 54.174.89.177 check
-        server 119047-web-02 100.25.223.50 check
+        server 119047-web-01 54.174.89.177:80 check
+        server 119047-web-02 100.25.223.50:80 check
 # end of parameters
