@@ -41,11 +41,11 @@ frontend alexotara-frontend
         default_backend alexotara-backend
 
 frontend alexotara-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/alexotara.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.alexotara.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend alexotara-backend
 
 backend alexotara-backend
         balance roundrobin
-        server 119047-web-01 54.174.89.177:80 check
-        server 119047-web-02 100.25.223.50:80 check
+        server 119047-web-01 34.229.49.10:80 check
+        server 119047-web-02 54.236.25.166:80 check
