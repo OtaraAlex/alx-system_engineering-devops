@@ -41,7 +41,7 @@ frontend alexotara-frontend
         default_backend alexotara-backend
 
 frontend alexotara-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/alexotara.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.alexotara.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend alexotara-backend
 
