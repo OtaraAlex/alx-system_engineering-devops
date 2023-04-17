@@ -25,6 +25,8 @@ All of the following folders are projects done during the studies:
 | [`0x0F-load_balancer`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x0F-load_balancer) | It aims to learn about how to setup and use a load balancer distributing network load across multiple servers |
 | [`0x10-https_ssl`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x10-https_ssl) | This aims to learn about SSL certificates and authentication |
 | [`0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x11-what_happens_when_your_type_google_com_in_your_browser_and_press_enter) | This aims to write an article explaining the intricacies of what happens when one makes a google search |
+| [`0x12-web_stack_debugging_2`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x12-web_stack_debugging_2) | This aims to provide further knowledge of what was previously learned in webstack debugging |
+| [`0x13-firewall`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x13-firewall) | This aims to learm about firewalls and how to set them up for servers |
 | [`Command Line For The Win`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/command_line_for_the_win) | This aims to gain mastery of command line commands across different difficulties |
 | [`Attack Is The Best Defense`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/attack_is_the_best_defense) | . |
 
