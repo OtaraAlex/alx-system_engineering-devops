@@ -40,8 +40,8 @@ frontend alexotara-tech-frontend
 
 backend alexotara-tech-backend
     balance roundrobin
-    server 119047-web-01 34.229.49.10:80 check
-    server 119047-web-02 54.236.25.166:80 check
+    server 119047-web-01 100.26.166.59:80 check
+    server 119047-web-02 3.90.80.73:80 check
 "
 
 # shellcheck disable=SC2154
