@@ -47,5 +47,5 @@ frontend alexotara-frontend-https
 
 backend alexotara-backend
         balance roundrobin
-        server 119047-web-01 100.26.166.59:80 check
-        server 119047-web-02 3.90.80.73:80 check
+        server 119047-web-01 54.158.206.40:80 check
+        server 119047-web-02 100.26.225.112:80 check
