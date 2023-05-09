@@ -29,6 +29,9 @@ All of the following folders are projects done during the studies:
 | [`0x13-firewall`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x13-firewall) | This aims to learm about firewalls and how to set them up for servers |
 | [`0x14-mysql`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x14-mysql) | This aims to learn how to incorporate the use of MySQL in this module |
 | [`0x15-api`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x15-api) | This aims to learn how to incorporate the use of api in this module |
+| [`0x16-api_advanced`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x16-api_advanced) | . |
+| [`0x17-web_stack_debugging_3`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3) | .|
+| [`0x19-postmortem`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x19-postmortem) |. |
 | [`Command Line For The Win`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/command_line_for_the_win) | This aims to gain mastery of command line commands across different difficulties |
 | [`Attack Is The Best Defense`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/attack_is_the_best_defense) | . |
 
