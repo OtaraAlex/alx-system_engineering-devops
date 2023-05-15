@@ -33,6 +33,8 @@ All of the following folders are projects done during the studies:
 | [`0x17-web_stack_debugging_3`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x17-web_stack_debugging_3) | . |
 | [`0x18-webstack_monitoring`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x18-webstack_monitoring) | . |
 | [`0x19-postmortem`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x19-postmortem) | . |
+| [`0x1A-application_server`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x1A-application_server) | . |
+| [`0x1B-web_stack_debugging_4`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/0x1B-web_stack_debugging_4) | . |
 | [`Command Line For The Win`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/command_line_for_the_win) | This aims to gain mastery of command line commands across different difficulties |
 | [`Attack Is The Best Defense`](https://github.com/OtaraAlex/alx-system_engineering-devops/tree/master/attack_is_the_best_defense) | . |
 
